@@ -90,7 +90,7 @@ include __DIR__ . '/../includes/header.php';
                     Linux pour des services tels qu'OpenVPN, Docker, Nextcloud, Traefik et de l'hébergement web.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                    <a href="./assets/documents/medo-louis_cv.pdf" target="_blank" class="flex justify-center <?= $css_btn ?> mt-auto">
+                    <a href="https://kdrive.infomaniak.com/app/share/831857/1c3c47ab-815d-43a9-a7c5-d5b76d86bec5" target="_blank" class="flex justify-center <?= $css_btn ?> mt-auto">
                         <button class="scroll-btn bg-teal-700 text-white px-6 py-3 rounded-lg hover:bg-teal-800 transition">Curriculum vitæ
                     </a>
                 </div>
@@ -533,7 +533,7 @@ include __DIR__ . '/../includes/header.php';
                         </ul>
                     </div>
 
-                    <a href="assets/documents/referentiel_epreuve-E5.pdf" target="_blank" rel="noopener noreferrer" class="<?= CSS_BTN_PRIMARY ?> mt-5">
+                    <a href="https://kdrive.infomaniak.com/app/share/831857/db7a0dfa-c5e5-4fa6-8457-5a0985276220" target="_blank" rel="noopener noreferrer" class="<?= CSS_BTN_PRIMARY ?> mt-5">
                         Référentiel de l'épreuve E5
                     </a>
                 </div>
