@@ -8,10 +8,11 @@ GIT DIFF :
 Contrainte :
 * Sois extrêmement concis (bullet points) et ne génère que les sections demandées.
 * Répond seulement à ma requête et ne donne moi aucune information superflux
--->
 
-## 📝 Contexte & Description
-<!-- Quel est le but de cette PR ? Mentionne le numéro de l'issue (ex: Fixes #12). -->
+TEMPLATE DE PULL REQUEST :
+````
+## 📝 Description
+[Quel est le but de cette PR ? Mentionne le numéro de l'issue (ex: Fixes #12).]
 
 ## 🚀 Nature du changement
 - [ ] 🐛 Résolution de bug
@@ -21,9 +22,11 @@ Contrainte :
 - [ ] 📚 Documentation
 
 ## 🧪 Validation
-<!-- Comment ce code a-t-il été testé ? (ex: build de l'image locale réussi, test curl OK). -->
+[Comment ce code a-t-il été testé ? (ex: build de l'image locale réussi, test curl OK).]
 
-## ✅ Checklist SRE
+## ✅ Definition of done
 - [ ] J'ai relu mon propre code.
 - [ ] J'ai vérifié qu'aucun mot de passe ou secret n'est présent.
 - [ ] La documentation a été mise à jour si nécessaire.
+````
+-->
