@@ -1,0 +1,58 @@
+[
+    {
+        "titre": "Millenuits",
+        "image": "assets/img/projet_bts-sio_millenuits.png",
+        "description": "Refonte complète de l'infrastructure informatique de Millenuits : segmentation réseau (VLAN), déploiement automatisé, centralisation des services (AD/DHCP) et mise en place d'une DMZ Docker pour les développeurs.",
+        "lien": "https://github.com/AP-BTS-SIO-Louis/millenuits",
+        "tags": ["Gérer le patrimoine informatique", "Répondre aux incidents et aux demandes d'assistance et d'évolution", "Concevoir une solution d'infrastructure réseau", "Installer, tester et déployer une solution d'infrastructure réseau", "Assurer la cybersécurité d'une infrastructure réseau, d'un système, d'un service"],
+        "categorie": "bts"
+    },
+    {
+        "titre": "IMDEO",
+        "image": "assets/img/projet_bts-sio_imdeo.png",
+        "description": "Conception et déploiement d'une infrastructure réseau complète pour IMDEO (Groupe Hervé) : routage inter-VLAN, services réseaux, administration de serveurs Debian et durcissement de la sécurité système.",
+        "lien": "https://github.com/AP-BTS-SIO-Louis/imdeo",
+        "tags": ["Concevoir une solution d'infrastructure réseau", "Installer, tester et déployer une solution d'infrastructure réseau", "Exploiter, dépanner et superviser une solution d'infrastructure réseau", "Assurer la cybersécurité d'une infrastructure réseau, d'un système, d'un service"],
+        "categorie": "bts"
+    },
+    {
+        "titre": "Site vitrine ArkAI",
+        "image": "assets/img/projet_bts_sio_arkai.png",
+        "description": "Réalisation d'un site vitrine responsive avec Bootstrap pour la startup fictive ArkAI, en mettant l'accent sur la présentation de l'offre et l'expérience utilisateur.",
+        "lien": "https://github.com/FireToak/bts-sio_boostrap-startup-arkai",
+        "tags": ["Développer la présence en ligne de l'organisation", "Travailler en mode projet", "Mettre à disposition des utilisateurs un service informatique"],
+        "categorie": "bts"
+    },
+    {
+        "titre": "LoutikTUNNEL",
+        "image": "assets/img/projet-tunnel-loutik.png",
+        "description": "Implémentation d'un tunnel VPN couplé à un WAF afin de sécuriser l'accès externe à mon homelab.",
+        "lien": "https://docs.loutik.fr/docs/homelab/socle-physique-et-reseau/introduction#2-la-gateway--un-cloudflare-tunnel-fait-maison",
+        "tags": ["Docker", "Réseau", "Sécurité"],
+        "categorie": "personnel"
+    },
+    {
+        "titre": "Cluster K3s Loutik",
+        "image": "assets/img/projet-k3s-loutik.png",
+        "description": "Déploiement d'un cluster K3s à trois nœuds pour héberger et orchestrer des applications conteneurisées.",
+        "lien": "https://docs.loutik.fr/docs/homelab/cluster-k3s/introduction",
+        "tags": ["Docker", "Réseau", "Sécurité"],
+        "categorie": "personnel"
+    },
+    {
+        "titre": "Traefik reverse proxy",
+        "image": "assets/img/projet-traefik.png",
+        "description": "Mise en place d'un reverse proxy Traefik pour centraliser le routage des services et la gestion des flux HTTPS de mon homelab.",
+        "lien": "https://kdrive.infomaniak.com/app/share/831857/35e30e55-8e6a-4590-a075-c17dbcc8939a",
+        "tags": ["Docker", "Réseau", "Sécurité"],
+        "categorie": "personnel"
+    },
+    {
+        "titre": "WIKI Loutik",
+        "image": "assets/img/projet-wiki-loutik.png",
+        "description": "Conception d'un wiki technique sous Docusaurus pour centraliser et partager mes procédures d'administration.",
+        "lien": "https://docs.loutik.fr",
+        "tags": ["Documentation", "Web", "Partage"],
+        "categorie": "personnel"
+    }
+]

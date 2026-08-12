@@ -1,0 +1,10 @@
+# Forcer les retours à la ligne style Linux (LF) par défaut
+* text=auto eol=lf
+
+# Fichiers binaires (images, etc.) à ne pas toucher
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

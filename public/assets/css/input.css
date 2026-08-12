@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 4px;
+    background: #3b82f6;
+    margin: 12px auto 0;
+}
+
+/* Styles pour la section Compétences */
+
+/* Conteneur global */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permet de passer à la ligne sur mobile */
+    padding: 2rem;
+    background-color: #eaf6fc; /* Ton bleu clair actuel approximatif */
+}
+
+/* La carte blanche */
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet "lift" au survol de la carte */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+/* En-tête de la carte */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.card-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+.category-icon {
+    color: #3498db;
+    font-size: 1.2rem;
+}
+
+/* Grille interne des logos */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Chaque compétence individuelle */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.skill-item:hover {
+    background-color: #a3ffbe; /* Gris très léger au survol de l'item */
+}
+
+.skill-item i {
+    font-size: 2rem; /* Taille des logos */
+    margin-bottom: 5px;
+}
+
+.skill-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+}
+/* Liste dédiée aux compétences mobilisées sur les projets BTS */
+.project-skills-list {
+    list-style: disc !important;
+    list-style-position: outside;
+    padding-left: 1.25rem;
+    margin-left: 0;
+}
+
+/* Hover pour les liens de veille : supprimer le dégradé et appliquer un fond bleu clair */
+.gradient-hover-solid:hover {
+    background-image: none !important;
+    background-color: #eff6ff !important;
+}

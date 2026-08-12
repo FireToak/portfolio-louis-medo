@@ -1,0 +1,20 @@
+# Système de versionning
+.git
+.gitignore
+
+# Fichiers de configuration Docker et CI/CD
+docker-compose.yaml
+Dockerfile
+.dockerignore
+.github
+
+# Documentation et fichiers divers
+readme.md
+.env
+package.json
+package-lock.json
+tailwind.config.js
+.vscode
+.idea
+Thumbs.db
+.DS_Store

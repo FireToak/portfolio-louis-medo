@@ -1,0 +1,14 @@
+[
+    {
+        "diplome": "BTS SIO SISR",
+        "ecole": "Lycée Paul Louis Courrier",
+        "annee": "2025 - 2027",
+        "description": "Systèmes informatiques aux organisations option solutions d'infrastructure, systèmes et réseaux."
+    },
+    {
+        "diplome": "BAC PRO SN RISC",
+        "ecole": "Lycée Henri Becquerel",
+        "annee": "2022-2025",
+        "description": "Systèmes Numériques option Réseau Informatiques et Systèmes Communicants."
+    }
+]

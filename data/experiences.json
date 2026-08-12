@@ -1,0 +1,34 @@
+[
+    {
+        "type": "Stage",
+        "date": "mai 2025",
+        "poste": "Administration système DevOps",
+        "entreprise": "AG2R / Esvres",
+        "description": "Optimisation et automatisation du provisionnement de ressources IT (ex: machines virtuelles) sur vSphere.",
+        "lien_rapport": "https://kdrive.infomaniak.com/app/share/831857/0ae4e40a-6984-4fae-9ac1-fcb918662cfc"
+    },
+    {
+        "type": "Stage",
+        "date": "décembre 2024",
+        "poste": "Administration système",
+        "entreprise": "Hutchinson / Joué-lès-Tours",
+        "description": "Migration de parc Windows, déploiement de serveurs 2025 et configuration d'équipements réseau Cisco.",
+        "lien_rapport": ""
+    },
+    {
+        "type": "Stage",
+        "date": "juin 2024",
+        "poste": "Administration système",
+        "entreprise": "Hutchinson / Joué-lès-Tours",
+        "description": "Migration Windows 11, préparation complète des postes (logiciels, données) et rédaction de procédures techniques.",
+        "lien_rapport": ""
+    },
+    {
+        "type": "Stage",
+        "date": "février 2024",
+        "poste": "Infogérance",
+        "entreprise": "APB MULTIMEDIA / Tours",
+        "description": "Déploiement d'infrastructure Windows Server 2022 (AD, Hyper-V), refonte et configuration du réseau Zyxel, préparation des postes et support technique utilisateur.",
+        "lien_rapport": ""
+    }
+]

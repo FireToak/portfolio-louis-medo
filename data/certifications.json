@@ -1,0 +1,42 @@
+[
+        {
+        "titre": "Docker Beginner",
+        "annee": 2,
+        "date": "Novembre 2025",
+        "description": "KodeKloud - Formation technologie cloud.",
+        "image": "assets/img/certifications/banniere-kodekloud.png",
+        "lien": "https://learn.kodekloud.com/certificate/befd684a-f383-4ae3-bb38-f9bd6fcda9ea"
+    },
+    {
+        "titre": "PIX (573)",
+        "annee": 1,
+        "date": "Février 2025",
+        "description": "PIX - certification de compétences numériques.",
+        "image": "assets/img/certifications/banniere-pix.png",
+        "lien": "https://kdrive.infomaniak.com/app/share/831857/2cdbb382-6975-4b1c-9911-ceb1c91c06f4"
+    },
+    {
+        "titre": "Cloud Practitioner - AWS",
+        "annee": 2,
+        "date": "Octobre 2025",
+        "description": "AWS - Amazon Web Services",
+        "image": "assets/img/certifications/banniere-aws-cloud-practitionner.svg",
+        "lien": "https://www.credly.com/badges/40d2921b-3999-41d8-abe0-d57b89c23408/email"
+    },
+    {
+        "titre": "EBIOS Risk Manager",
+        "annee": 2,
+        "date": "Octobre 2025",
+        "description": "EBIOS - Expression des Besoins et Identification des Objectifs de Sécurité.",
+        "image": "assets/img/certifications/banniere-ebios-risk-manager.png",
+        "lien": "https://kdrive.infomaniak.com/app/share/831857/aed61244-17de-4112-a453-8feb9bf940d0"
+    },
+    {
+        "titre": "SecNum académie - ANSSI",
+        "annee": 2,
+        "date": "Septembre 2025",
+        "description": "ANSSI - Agence nationale de la sécurité des systèmes d'information.",
+        "image": "assets/img/certifications/banniere-secnum-academie.png",
+        "lien": "https://kdrive.infomaniak.com/app/share/831857/868a66cc-782d-46db-a6ac-2a75d056b4fb"
+    } 
+]

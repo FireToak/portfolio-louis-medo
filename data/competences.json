@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Administration système",
+        "skills": [
+            { "name": "Debian", "icon": "devicon-debian-plain colored" },
+            { "name": "Windows server", "icon": "devicon-windows8-original colored" }
+        ]
+    },
+    {
+        "category": "Virtualisation & Conteneurs",
+        "skills": [
+            { "name": "VMware ESXi", "icon": "devicon-vsphere-plain" },
+            { "name": "Proxmox", "icon": "devicon-proxmox-plain-wordmark" },
+            { "name": "Docker", "icon": "devicon-docker-plain colored" }
+        ]
+    },
+    {
+        "category": "Automatisation & DevOps",
+        "skills": [
+            { "name": "Ansible", "icon": "devicon-ansible-plain colored" },
+            { "name": "Docker Compose", "icon": "devicon-docker-plain-wordmark colored" },
+            { "name": "Kubernetes", "icon": "devicon-kubernetes-plain colored" },
+            { "name": "CI/CD (GitLab)", "icon": "devicon-gitlab-plain colored" }
+        ]
+    }
+]

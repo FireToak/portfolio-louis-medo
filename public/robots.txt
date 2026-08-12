@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Éviter que les robots scannent les fichiers sources ou includes
+Disallow: /includes/
+Disallow: /data/
+
+# Indication du plan du site
+Sitemap: https://louis.loutik.fr/sitemap.xml

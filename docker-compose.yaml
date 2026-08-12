@@ -1,0 +1,22 @@
+---
+# Local development environment for a PHP web application
+services:
+  web:
+    # Dev view :
+    # image: php:8.2-apache
+    # container_name: portfolio-louis-medo
+    # ports:
+    #   - "8080:80"
+    # volumes:
+    #   # Monte tout le projet (pas seulement public)
+    #   - ./:/var/www/html/
+    #   # Monte la config Apache personnalisée
+    #   - ./apache-config.conf:/etc/apache2/sites-available/000-default.conf
+    # command: >
+    #   bash -c "a2enmod rewrite && apache2-foreground"
+    
+    # Test docker image build :
+    image: dev-portfolio-louis-medo:1.0.8
+    container_name: portfolio-louis-medo
+    ports:
+      - "8080:8080"

@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-louis-medo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --watch",
+    "build": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireToak/portfolio-bts-sio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FireToak/portfolio-bts-sio/issues"
+  },
+  "homepage": "https://github.com/FireToak/portfolio-bts-sio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
