@@ -16,7 +16,7 @@ services:
     #   bash -c "a2enmod rewrite && apache2-foreground"
     
     # Test docker image build :
-    image: dev-portfolio-louis-medo:1.0.8
+    image: ghcr.io/firetoak/portfolio-louis-medo:1.0.0
     container_name: portfolio-louis-medo
     ports:
       - "8080:8080"
