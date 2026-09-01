@@ -2,6 +2,13 @@
 # Local development environment for a PHP web application
 services:
   web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio-louis-medo
+    ports:
+      - "8080:8080"
+    
     # Dev view :
     # image: php:8.2-apache
     # container_name: portfolio-louis-medo
@@ -14,9 +21,9 @@ services:
     #   - ./apache-config.conf:/etc/apache2/sites-available/000-default.conf
     # command: >
     #   bash -c "a2enmod rewrite && apache2-foreground"
-    
-    # Test docker image build :
-    image: ghcr.io/firetoak/portfolio-louis-medo:1.0.0
-    container_name: portfolio-louis-medo
-    ports:
-      - "8080:8080"
+
+    # # Test docker image build :
+    # image: ghcr.io/firetoak/portfolio-louis-medo:1.0.0
+    # container_name: portfolio-louis-medo
+    # ports:
+    #   - "8080:8080"
