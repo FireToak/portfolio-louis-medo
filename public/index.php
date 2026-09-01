@@ -472,7 +472,7 @@ include __DIR__ . '/../includes/header.php';
                         <span class="text-amber-500 mr-2">📡</span> 2. Extraction & agrégation
                     </h3>
                     <p class="text-gray-600 text-sm sm:text-base">
-                        Récupération centralisée des flux RSS des sources listées.
+                        Centraliser la récupération des flux RSS provenant des sources listées dans un agrégateur tel que Miniflux.
                     </p>
                 </div>
 
@@ -482,14 +482,14 @@ include __DIR__ . '/../includes/header.php';
 
                 <div class="w-full <?= CSS_CARD ?> p-6 text-center">
                     <h3 class="text-xl font-bold text-gray-800 mb-3 flex items-center justify-center">
-                        <span class="text-teal-700 mr-2">⚙️</span> 3. Traitement N8N & publication
+                        <span class="text-teal-700 mr-2">⚙️</span> 3. Trie & lecture
                     </h3>
                     <p class="text-gray-700 text-sm sm:text-base mb-6 leading-relaxed">
-                        Les données brutes sont récupérées puis synthétisées par une intelligence artificielle via un workflow d'automatisation N8N. Le résultat est publié automatiquement.
+                        Le tri des articles est effectué par expressions régulières dans l'agrégateur privé Miniflux. Pour rendre ces contenus accessibles, j'ai développé l'application LoutikDIGEST en Python. Cet outil récupère automatiquement les sources et articles validés afin de les afficher sur une interface web publique, permettant ainsi de partager la veille.
                     </p>
                     
                     <a href="https://digest.loutik.fr" target="_blank" rel="noopener noreferrer" class="<?= CSS_BTN_PRIMARY ?>">
-                        Voir mes synthèses
+                        Voir mes flux RSS
                     </a>
                 </div>
 
