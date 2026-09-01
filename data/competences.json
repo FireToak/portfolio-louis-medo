@@ -3,7 +3,10 @@
         "category": "Administration système",
         "skills": [
             { "name": "Debian", "icon": "devicon-debian-plain colored" },
-            { "name": "Windows server", "icon": "devicon-windows8-original colored" }
+            { "name": "Windows server", "icon": "devicon-windows8-original colored" },
+            { "name": "nginx", "icon": "devicon-nginx-original colored" },
+            { "name": "Grafana", "icon": "devicon-grafana-plain colored" },
+            { "name": "Prometheus", "icon": "devicon-prometheus-original colored" }
         ]
     },
     {
@@ -20,7 +23,8 @@
             { "name": "Ansible", "icon": "devicon-ansible-plain colored" },
             { "name": "Docker Compose", "icon": "devicon-docker-plain-wordmark colored" },
             { "name": "Kubernetes", "icon": "devicon-kubernetes-plain colored" },
-            { "name": "CI/CD (GitLab)", "icon": "devicon-gitlab-plain colored" }
+            { "name": "CI/CD (GitHub)", "icon": "devicon-github-original colored" },
+            { "name": "Argocd", "icon": "devicon-argocd-plain colored" }
         ]
     }
 ]
