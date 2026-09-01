@@ -16,19 +16,11 @@
         "categorie": "bts"
     },
     {
-        "titre": "LoutikTUNNEL",
-        "image": "assets/img/projet-tunnel-loutik.png",
-        "description": "Implémentation d'un tunnel VPN couplé à un WAF afin de sécuriser l'accès externe à mon homelab.",
-        "lien": "https://docs.loutik.fr/docs/homelab/socle-physique-et-reseau/introduction#2-la-gateway--un-cloudflare-tunnel-fait-maison",
-        "tags": ["Docker", "Réseau", "Sécurité"],
-        "categorie": "personnel"
-    },
-    {
-        "titre": "Cluster K3s Loutik",
-        "image": "assets/img/projet-k3s-loutik.png",
-        "description": "Déploiement d'un cluster K3s à trois nœuds pour héberger et orchestrer des applications conteneurisées.",
-        "lien": "https://docs.loutik.fr/docs/homelab/cluster-k3s/introduction",
-        "tags": ["Docker", "Réseau", "Sécurité"],
+        "titre": "Infrastructure homelab Loutik",
+        "image": "assets/img/projet_homelab-loutik.webp",
+        "description": "Déploiement d'une infrastructure complète type entreprise : clusters Proxmox et Kubernetes, GitOps (ArgoCD), IaC (Ansible), supervision (Prometheus/Grafana).",
+        "lien": "https://docs.loutik.fr/homelab/presentation-homelab/",
+        "tags": ["DevOps", "Kubernetes", "Ansible", "Proxmox", "Sécurité", "GitOps", "Réseau"],
         "categorie": "personnel"
     },
     {
@@ -37,14 +29,6 @@
         "description": "Mise en place d'un reverse proxy Traefik pour centraliser le routage des services et la gestion des flux HTTPS de mon homelab.",
         "lien": "https://kdrive.infomaniak.com/app/share/831857/35e30e55-8e6a-4590-a075-c17dbcc8939a",
         "tags": ["Docker", "Réseau", "Sécurité"],
-        "categorie": "personnel"
-    },
-    {
-        "titre": "WIKI Loutik",
-        "image": "assets/img/projet-wiki-loutik.png",
-        "description": "Conception d'un wiki technique sous Docusaurus pour centraliser et partager mes procédures d'administration.",
-        "lien": "https://docs.loutik.fr",
-        "tags": ["Documentation", "Web", "Partage"],
         "categorie": "personnel"
     }
 ]
