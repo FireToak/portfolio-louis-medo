@@ -367,10 +367,10 @@ include __DIR__ . '/../includes/header.php';
             <div class="flex justify-center mb-8">
                 <div class="inline-flex rounded-lg bg-gray-100 p-1">
                     <button type="button" data-year="1" class="year-btn px-4 py-2 rounded-l-lg text-sm font-medium text-gray-700 hover:bg-white transition">
-                        Lycée SN RISC
+                        BTS SIO 1ère année
                     </button>
                     <button type="button" data-year="2" class="year-btn px-4 py-2 rounded-r-lg text-sm font-medium text-gray-700 hover:bg-white transition">
-                        BTS SIO 1ère année
+                        BTS SIO 2ème année
                     </button>
                 </div>
             </div>
