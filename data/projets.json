@@ -16,14 +16,6 @@
         "categorie": "bts"
     },
     {
-        "titre": "Site vitrine ArkAI",
-        "image": "assets/img/projet_bts_sio_arkai.png",
-        "description": "Réalisation d'un site vitrine responsive avec Bootstrap pour la startup fictive ArkAI, en mettant l'accent sur la présentation de l'offre et l'expérience utilisateur.",
-        "lien": "https://github.com/FireToak/bts-sio_boostrap-startup-arkai",
-        "tags": ["Développer la présence en ligne de l'organisation", "Travailler en mode projet", "Mettre à disposition des utilisateurs un service informatique"],
-        "categorie": "bts"
-    },
-    {
         "titre": "LoutikTUNNEL",
         "image": "assets/img/projet-tunnel-loutik.png",
         "description": "Implémentation d'un tunnel VPN couplé à un WAF afin de sécuriser l'accès externe à mon homelab.",
