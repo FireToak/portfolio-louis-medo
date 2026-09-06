@@ -1,16 +1,22 @@
 [
     {
-        "titre": "Le Monde informatique",
-        "image": "assets/img/veille-techno-banniere-le_monde_informatique.png",
-        "description": "Veille régulière sur <span class=\"font-bold\">l’actualité technologique</span> et la <span class=\"font-bold\">cybersécurité</span>.",
+        "titre": "Stephane Robert",
         "type": "Flux RSS",
-        "lien": "https://www.lemondeinformatique.fr/"
+        "lien": "https://blog.stephane-robert.info/rss.xml"
+    },
+    {
+        "titre": "Korben",
+        "type": "Flux RSS",
+        "lien": "https://korben.info/feedfull"
+    },
+    {
+        "titre": "Debian Security",
+        "type": "Flux RSS",
+        "lien": "https://www.debian.org/security/dsa"
     },
     {
         "titre": "IT Connect",
-        "image": "assets/img/veille-techno-banniere-it_connect.png",
-        "description": "Veille sur <span class=\"font-bold\">l’administration système</span>, les <span class=\"font-bold\">solutions de sécurité</span> et les <span class=\"font-bold\">procédures</span>.",
         "type": "Flux RSS",
-        "lien": "https://www.it-connect.tech/"
+        "lien": "https://www.it-connect.tech/feed"
     }
 ]

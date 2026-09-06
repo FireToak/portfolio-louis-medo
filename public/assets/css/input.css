@@ -1,7 +1,15 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-image {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .section-title::after {
@@ -107,4 +115,91 @@ body {
 .gradient-hover-solid:hover {
     background-image: none !important;
     background-color: #eff6ff !important;
+}
+
+.certif-timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1rem 0;
+}
+
+.certif-timeline.hidden {
+    display: none;
+}
+
+.certif-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #38bdf8, #0ea5e9);
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.certif-row {
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+.certif-row--left {
+    justify-content: flex-end;
+    padding-right: 2.5rem;
+}
+
+.certif-row--right {
+    margin-left: 50%;
+    justify-content: flex-start;
+    padding-left: 2.5rem;
+}
+
+.certif-card {
+    width: 100%;
+    max-width: 22rem;
+}
+
+.certif-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14rem;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #d9d9d9;
+}
+
+.certif-dot {
+    position: absolute;
+    top: 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: #fff;
+    border: 4px solid #0ea5e9;
+    border-radius: 9999px;
+    z-index: 1;
+}
+
+.certif-row--left .certif-dot { right: -0.75rem; }
+.certif-row--right .certif-dot { left: -0.75rem; }
+
+/* Mobile : une seule colonne, ligne à gauche */
+@media (max-width: 767px) {
+    .certif-line { left: 1.5rem; }
+    .certif-row,
+    .certif-row--right {
+        width: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        padding-right: 0;
+    }
+    .certif-row--left .certif-dot,
+    .certif-row--right .certif-dot {
+        left: 0.75rem;
+        right: auto;
+    }
 }

@@ -38,8 +38,8 @@ define('CSS_TITLE', 'text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 se
 define('CSS_CARD', 'bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1');
 define('CSS_CARD_GRADIENT', 'bg-blue-50 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1');
 define('CSS_BTN_PRIMARY', 'inline-flex bg-teal-700 text-white px-4 py-3 rounded-lg hover:bg-teal-800 transition');
-define('CSS_IMG_CONTAINER', 'flex justify-center md:justify-start bg-sky-50 overflow-hidden');
-define('CSS_IMG', 'w-full h-32 sm:h-48 md:h-64 object-contain hover:scale-105 transition duration-300');
+define('CSS_IMG_CONTAINER', 'flex items-center justify-center bg-white overflow-hidden h-32 sm:h-48 md:h-56');
+define('CSS_IMG', 'portfolio-image w-full h-full hover:scale-105 transition duration-300');
 
 // Chargement des données
 $experiences = loadJsonData('experiences.json');
@@ -286,13 +286,14 @@ include __DIR__ . '/../includes/header.php';
             <?php
             function renderProjectCard($projet) {
                 $isBtsProject = strtolower(trim($projet['categorie'] ?? 'personnel')) === 'bts';
+                $imageFit = $isBtsProject ? 'object-cover md:object-contain' : 'object-cover';
                 $tags = $projet['tags'] ?? [];
                 ?>
                 <div class="<?= CSS_CARD ?> flex flex-col h-full">
                     <div class="<?= CSS_IMG_CONTAINER ?>">
                         <img src="<?= e($projet['image'] ?? '') ?>"
                              alt="<?= e($projet['titre'] ?? '') ?>"
-                             class="<?= CSS_IMG ?>"
+                             class="<?= CSS_IMG ?> <?= $imageFit ?>"
                              loading="lazy">
                     </div>
 
@@ -375,69 +376,65 @@ include __DIR__ . '/../includes/header.php';
                 </div>
             </div>
 
-            <?php
-            // Template de carte de certification
-            function renderCertificationCard($certif) {
-                $css_card = CSS_CARD_GRADIENT;
-                $css_img_container = CSS_IMG_CONTAINER;
-                $css_img = CSS_IMG;
-                $css_btn = CSS_BTN_PRIMARY;
-                ?>
-                <div class="<?= $css_card ?> flex flex-col h-full">
-                    <div class="<?= $css_img_container ?>">
-                        <img src="<?= e($certif['image'] ?? '') ?>" 
-                             alt="<?= e($certif['titre'] ?? '') ?>" 
-                             class="<?= $css_img ?>"
-                             loading="lazy">
+        <?php
+        // Une carte de certification (alterne gauche/droite selon $index)
+        function renderCertificationCard($certif, $index) {
+            $side = $index % 2 === 0 ? 'left' : 'right';
+            ?>
+            <div class="certif-row certif-row--<?= $side ?>">
+                <div class="<?= CSS_CARD_GRADIENT ?> certif-card flex flex-col h-full">
+                    <div class="certif-image-container">
+                        <img src="<?= e($certif['image'] ?? '') ?>"
+                            alt="<?= e($certif['titre'] ?? '') ?>"
+                            class="<?= CSS_IMG ?> object-contain"
+                            loading="lazy">
                     </div>
                     <div class="p-6 sm:p-8 text-center flex flex-col flex-grow">
                         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-3 line-clamp-2">
                             <?= e($certif['titre'] ?? '') ?>
                         </h3>
-                        
                         <div class="mb-4">
                             <span class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold line-clamp-1">
                                 <?= e($certif['date'] ?? '') ?>
                             </span>
                         </div>
-                        
                         <p class="text-sm sm:text-base text-gray-700 mb-3 pb-3 flex-grow line-clamp-3">
                             <?= e($certif['description'] ?? '') ?>
                         </p>
-                        
                         <?php if (!empty($certif['lien'])): ?>
-                            <a href="<?= e($certif['lien']) ?>" target="_blank" rel="noopener noreferrer" class="flex justify-center <?= $css_btn ?> mt-auto">
+                            <a href="<?= e($certif['lien']) ?>" target="_blank" rel="noopener noreferrer" class="flex justify-center <?= CSS_BTN_PRIMARY ?> mt-auto">
                                 Voir le certificat
                             </a>
                         <?php endif; ?>
                     </div>
                 </div>
-                <?php
-            }
+                <span class="certif-dot"></span>
+            </div>
+            <?php
+        }
+
+        // Timeline complète pour une année (KISS : une seule fonction réutilisée pour année 1 et 2)
+        function renderCertificationsTimeline($certifs, $panelId, $visible) {
+            $hidden = $visible ? '' : ' hidden';
             ?>
-
-            <div id="certifications-year-1" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-                <?php if (empty($certif_annee1)): ?>
-                    <p class="col-span-full text-center text-gray-600">Aucune certification disponible pour cette période.</p>
+            <div id="<?= e($panelId) ?>" class="certif-timeline<?= $hidden ?>">
+                <?php if (empty($certifs)): ?>
+                    <p class="text-center text-gray-600">Aucune certification disponible pour cette période.</p>
                 <?php else: ?>
-                    <?php foreach ($certif_annee1 as $certif): ?>
-                        <?php renderCertificationCard($certif); ?>
+                    <div class="certif-line"></div>
+                    <?php foreach (array_values($certifs) as $index => $certif): ?>
+                        <?php renderCertificationCard($certif, $index); ?>
                     <?php endforeach; ?>
                 <?php endif; ?>
             </div>
+            <?php
+        }
+        ?>
 
-            <div id="certifications-year-2" class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 hidden">
-                <?php if (empty($certif_annee2)): ?>
-                    <p class="col-span-full text-center text-gray-600">Aucune certification disponible pour cette période.</p>
-                <?php else: ?>
-                    <?php foreach ($certif_annee2 as $certif): ?>
-                        <?php renderCertificationCard($certif); ?>
-                    <?php endforeach; ?>
-                <?php endif; ?>
-            </div>
-        </div>
-    </section>
-
+        <?php renderCertificationsTimeline($certif_annee1, 'certifications-year-1', true); ?>
+        <?php renderCertificationsTimeline($certif_annee2, 'certifications-year-2', false); ?>
+    </section>                    
+    
     <!-- Veille Technologique Section -->
     <section id="veille" class="<?= CSS_SECTION_BG_GRADIENT ?>">
         <div class="<?= CSS_CONTAINER ?>">
@@ -485,7 +482,7 @@ include __DIR__ . '/../includes/header.php';
                         <span class="text-teal-700 mr-2">⚙️</span> 3. Trie & lecture
                     </h3>
                     <p class="text-gray-700 text-sm sm:text-base mb-6 leading-relaxed">
-                        Le tri des articles est effectué par expressions régulières dans l'agrégateur privé Miniflux. Pour rendre ces contenus accessibles, j'ai développé l'application LoutikDIGEST en Python. Cet outil récupère automatiquement les sources et articles validés afin de les afficher sur une interface web publique, permettant ainsi de partager la veille.
+                        Le tri des articles est effectué par expressions régulières dans l'agrégateur Miniflux. Pour rendre ces contenus accessibles, j'ai développé l'application LoutikDIGEST en Python. Cet outil récupère automatiquement les sources et articles validés afin de les afficher sur une interface web publique, permettant ainsi de partager la veille.
                     </p>
                     
                     <a href="https://digest.loutik.fr" target="_blank" rel="noopener noreferrer" class="<?= CSS_BTN_PRIMARY ?>">
