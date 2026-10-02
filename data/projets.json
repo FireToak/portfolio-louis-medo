@@ -1,5 +1,33 @@
 [
     {
+    "titre": "ECOCERT",
+    "image": "assets/img/projet_bts-sio_ecocert.png",
+    "description": "Amélioration et maintenance de l'infrastructure d'ECOCERT : serveurs Proxmox, réseaux Cisco, pare-feu Stormshield. Administration Active Directory, Debian, Ansible et hébergement web (Apache, GlassFish) avec documentation as code (GitOps).",
+    "lien": "https://github.com/firetoak/ecocert-docs",
+    "tags": [
+        "Gérer le patrimoine informatique",
+        "Répondre aux incidents et aux demandes d'assistance et d'évolution",
+        "Développer la présence en ligne de l'organisation",
+        "Mettre à disposition des utilisateurs un service informatique",
+        "Travailler en mode projet"
+    ],
+    "categorie": "bts"
+    },
+    {
+        "titre": "CUB",
+        "image": "assets/img/projet_bts-sio_cub.png",
+        "description": "Conception de l'architecture réseau de l'agence CUB à Dortmund : segmentation (VLAN, DMZ), déploiement de pare-feux UTM Stormshield, hébergement des services sur Proxmox, gestion des tickets et inventaire via GLPI, automatisation avec PowerShell et Ansible.",
+        "lien": "https://github.com/firetoak/cub-docs",
+        "tags": [
+            "Gérer le patrimoine informatique",
+            "Mettre à disposition des utilisateurs un service informatique",
+            "Répondre aux incidents et aux demandes d'assistance et d'évolution",
+            "Concevoir une solution d'infrastructure réseau",
+            "Travailler en mode projet"
+        ],
+        "categorie": "bts"
+    },
+    {
         "titre": "Millenuits",
         "image": "assets/img/projet_bts-sio_millenuits.png",
         "description": "Refonte complète de l'infrastructure informatique de Millenuits : segmentation réseau (VLAN), déploiement automatisé, centralisation des services (AD/DHCP) et mise en place d'une DMZ Docker pour les développeurs.",
