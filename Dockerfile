@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.5.11-apache
 
 # Variables d'environnement
 ARG APP_VERSION=v0.0.0
@@ -11,6 +11,9 @@ RUN a2enmod rewrite \
 
 # Copie de la configuration Apache
 COPY apache-config.conf /etc/apache2/sites-available/000-default.conf
+
+# Copie de la configuration pour cacher la version de php
+COPY security.ini /usr/local/etc/php/conf.d/security.ini
 
 # Copie du code avec attribution des droits
 COPY --chown=www-data:www-data . /var/www/html/
