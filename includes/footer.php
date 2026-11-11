@@ -41,7 +41,11 @@
       <div>
         <div class="container mx-auto px-4 py-6 text-center">
           <p class="text-sm sm:text-base">© 2025 Louis MEDO — Tous droits réservés.</p>
-          <p>Version : <?php echo getenv('APP_VERSION') ?: 'Dev'; ?></p>
+          <div class="mt-5 flex justify-center gap-4 text-sm">
+            <a href="assets/documents/mentions-legales-loutik.pdf" target="_blank" rel="noopener" class="hover:text-blue-100 transition">Mentions légales</a>
+            <a href="assets/documents/politique-confidentialite-loutik.pdf" target="_blank" rel="noopener" class="hover:text-blue-100 transition">Politique de confidentialité</a>
+          </div>
+          <p class="mt-5">Version : <?php echo getenv('APP_VERSION') ?: 'Dev'; ?></p>
         </div>
       </div>
     </footer>
