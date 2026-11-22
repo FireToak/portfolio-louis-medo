@@ -1,4 +1,4 @@
-FROM php:8.5.12-apache
+FROM php:8.5.13-apache
 
 # Variables d'environnement
 ARG APP_VERSION=v0.0.0
