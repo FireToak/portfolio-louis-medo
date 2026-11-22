@@ -1,11 +1,19 @@
 [
     {
+        "titre": "System Administration I - Red Hat",
+        "annee": 2,
+        "date": "Novembre 2025",
+        "description": "Red Hat - Éditeur de systèmes d'exploitation Linux",
+        "image": "assets/img/certifications/banniere-redhat.png",
+        "lien": "https://www.credly.com/badges/b0d90893-60e9-4e20-8c15-669da13f07c7"
+    },
+    {
         "titre": "Cloud Practitioner - AWS",
         "annee": 1,
         "date": "Octobre 2025",
         "description": "AWS - Amazon Web Services",
         "image": "assets/img/certifications/banniere-aws-cloud-practitionner.svg",
-        "lien": "https://www.credly.com/badges/40d2921b-3999-41d8-abe0-d57b89c23408/email"
+        "lien": "https://www.credly.com/badges/40d2921b-3999-41d8-abe0-d57b89c23408"
     },
     {
         "titre": "EBIOS Risk Manager",
